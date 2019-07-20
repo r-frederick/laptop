@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
@@ -10,9 +11,9 @@ tap "universal-ctags/universal-ctags"
 brew "bat"
 brew "coreutils"
 brew "cowsay"
-brew "openssl"
 brew "fzf"
 brew "git"
+brew "openssl"
 brew "gnupg", link: false
 brew "graphviz"
 brew "hopenpgp-tools"
@@ -31,17 +32,25 @@ brew "yarn"
 brew "ykman"
 brew "zsh"
 brew "jesseduffield/lazydocker/lazydocker"
-brew "koekeishiya/formulae/chunkwm"
-brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/chunkwm", restart_service: true
+brew "koekeishiya/formulae/skhd", restart_service: true
 brew "nexeck/tmuxinator/tmuxinator"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+cask "alfred3"
 cask "arduino"
+cask "brave-browser"
 cask "caprine"
 cask "dozer"
+cask "dropbox"
+cask "figma"
 cask "font-fira-code"
 cask "gpg-suite"
 cask "insomnia"
+cask "iterm2-nightly"
+cask "karabiner-elements"
 cask "minikube"
+cask "slack"
+cask "spotify"
 mas "1Password 7", id: 1333542190
 mas "Contrast", id: 1254981365
 mas "Deliveries", id: 924726344
@@ -52,4 +61,3 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "SnippetsLab", id: 1006087419
 mas "SomaFM miniplayer", id: 1303140142
 mas "Trello", id: 1278508951
-mas "Xcode", id: 497799835
