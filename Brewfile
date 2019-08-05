@@ -33,8 +33,8 @@ brew "yarn"
 brew "ykman"
 brew "zsh"
 brew "jesseduffield/lazydocker/lazydocker"
-brew "koekeishiya/formulae/chunkwm"
-brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/chunkwm", restart_service: true
+brew "koekeishiya/formulae/skhd", restart_service: true
 brew "nexeck/tmuxinator/tmuxinator"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "alfred3"
